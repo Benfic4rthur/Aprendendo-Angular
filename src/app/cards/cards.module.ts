@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CardComponent } from '../card/card.component';
 import { Card2Component } from '../card2/card2.component';
 import { CardButtonComponent } from '../card-button/card-button.component';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { CardButtonComponent } from '../card-button/card-button.component';
     CardButtonComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatSliderModule
   ],
   exports: [
     CardComponent,
