@@ -1,7 +1,7 @@
 <div class="card">
     <!-- Exemplo com Bind <div class="card__plan card__item">Plano <b>{{tipo}}</b></div>
     <div class="card__price card__item">{{getFullPrice()}}</div> -->
-    <div class="card__plan card__item">Plano <b>{{plano.tipo ? plano.tipo : 'Sem tipo definido'}}</b></div>
-    <div class="card__price card__item">R$ {{plano.preco}},00/Mês</div>
+    <div class="card__plan card__item">Plano <b>{{plano.infos?.tipo ? plano.infos.tipo : 'Sem tipo definido'}}</b></div>
+    <div class="card__price card__item">R$ {{plano.infos.preco ? plano.infos.preco : 0}},00/Mês</div>
     <app-card-button></app-card-button>
 </div>
