@@ -16,7 +16,7 @@ import { CardButtonComponent } from '../card-button/card-button.component';
   exports: [
     CardComponent,
     Card2Component,
-    CardButtonComponent
+    CardButtonComponent // não precisa exportar esse pois ele esta sendo usado dentro dos componentes de card
   ]
 })
 export class CardsModule { }
