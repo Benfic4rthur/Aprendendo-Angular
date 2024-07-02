@@ -21,22 +21,4 @@
     font-weight: 600;
     font-size: 40px;
 }
-
-&__button {
-    font-size: 16px;
-    text-align: center;
-    margin-top: 10px;
-    border-radius: 25px;
-    background-color: white;
-    cursor: pointer;
-    transition: .7s;
-    
-    &:hover {
-        transition: .7s;
-        background-color: black; // cor de fundo ao passar o mouse
-        color: white;
-        transform: scale(1.03); // aumenta o tamanho ao passar o mouse
-    }
-}
-
 }
