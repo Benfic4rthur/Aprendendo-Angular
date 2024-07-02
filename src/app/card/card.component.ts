@@ -25,7 +25,7 @@ export class CardComponent {
   //     preco: 100
   //   }
   // }
-  @Input() planType: string = ""; // criar inputs tipados passo 1
-  @Input() planPrice: number = 0;
+  @Input({required: true}) planType: string = ""; // criar inputs tipados passo 1
+  @Input({required: true}) planPrice: number = 0; // o required e para o input ser obrigatorio
 
 }
