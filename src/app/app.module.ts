@@ -3,20 +3,16 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CardComponent } from './card/card.component';
-import { Card2Component } from './card2/card2.component';
-import { CardButtonComponent } from './card-button/card-button.component';
+import { CardsModule } from './cards/cards.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CardComponent,
-    Card2Component,
-    CardButtonComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CardsModule
   ],
   providers: [
     provideClientHydration()
