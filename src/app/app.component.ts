@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'primeiro-projeto';
+  cardPlanType = 'Simples'; // cria valores para os inputs passo 2
+  cardPlanPrice = 100;
 }
