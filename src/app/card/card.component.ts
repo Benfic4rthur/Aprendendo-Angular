@@ -27,5 +27,8 @@ export class CardComponent {
   // }
   @Input({required: true}) planType: string = ""; // criar inputs tipados passo 1
   @Input({required: true}) planPrice: number = 0; // o required e para o input ser obrigatorio
-
+  botaoClicado(event : IPlano){
+    this.planType = event.infos.tipo;
+    this.planPrice = event.infos.preco;
+  }
 }

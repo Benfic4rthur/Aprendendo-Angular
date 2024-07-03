@@ -1,6 +1,8 @@
-<html>
+<div class="global">
 <div class="container">
-  <app-card [planType] = "cardPlanType" [planPrice] = "cardPlanPrice"></app-card> <!--envio o valor para o componente passo 3 -->
+  <app-card [planType]="cardPlanType" [planPrice]="cardPlanPrice"></app-card>
   <app-card2></app-card2>
+  <input #meuInput type="text" (keyup)="tipoManual(meuInput.value.toUpperCase())" placeholder="Mude o tipo">
+  <input #meuInput2 type="text" (keyup)="valorManual(meuInput2.value)" placeholder="Digite quanto quer pagar" maxlength="5">
 </div>
-</html>
+</div>
